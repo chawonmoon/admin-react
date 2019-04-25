@@ -1,0 +1,306 @@
+// Variables
+//
+// 변수는 일관된 명칭을 위해
+// '$component-state-property-size ($구성요소-상태-프로퍼티-크기)' 공식을 따른다.
+// 예: $nav-link-disable-color 또는 $modal-content-box-shadow-xs 또는 $aside-content-gray-100
+
+// option
+$enable-pointer-cursor-for-buttons: true !default; // button 마우스 커서 컨트롤
+$enable-responsive-font-sizes: true !default; // 반응형 폰트 사이즈
+/* 
+ * Color system
+ */
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$hotpink: #e83e8c !default;
+$pink: #f3848c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "hotpink": $hotpink,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+  ),
+  $colors
+);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$basic: $pink !default; // 기본 테마 컬러
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+  ),
+  $theme-colors
+);
+
+// 색상 점프 요청을위한 특정 점프 포인트 설정
+$theme-color-interval: 8% !default;
+
+/* 
+ * Spacing
+ * 요소의 기본 간격(공간) 제어.
+ * 더 많은 변형이 필요할 경우 $spacers 맵에 항목을 추가할 수 있다.
+ */
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    )
+  ),
+  $spacers
+);
+
+/*
+ * Size
+ * 크기 제어
+ * 이 변수는 .h-* 및 .w-* 등급에 영향을 미친다.
+ */
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+/* 
+ * Body
+ * `<body>` 요소에 대한 설정.
+ */
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+/*
+ * Links
+ * `<a> 등의 anchor` 요소에 대한 설정.
+ */
+$link-color: theme-color("primary") !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
+// `.text- * '클래스를 가진 링크의 백분율을 어둡게합니다. (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+/*
+ * Paragraphs
+ * `<p> 등의 글단락` 요소에 대한 설정.
+ */
+$paragraph-margin-bottom: 1rem !default;
+
+/* 
+ * Grid breakpoints
+ * 레이아웃이 변경될 최소 치수를 정의하고,
+ * 다른화면 크기를 추가하여 미디어 쿼리에 사용.
+ */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+/* 
+ * Grid containers
+ * 화면 크기에 따라 '.container'의 최대 너비를 정의하십시오.
+ */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+/* 
+ * Grid columns
+ * column 수를 설정하고 내장의 width를 지정.
+ */
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+/* 
+ * Components
+ * border-radius, box-shadow, transition 등 공통 컴포넌트 속성을 정의.
+ */
+$border-radius: 0.25rem !default;
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+
+$transition-base: all 0.3s ease-in-out !default;
+$transition-fade: opacity 0.15s linear !default;
+$transition-collapse: height 0.35s ease !default;
+
+$embed-responsive-aspect-ratios: () !default;
+$embed-responsive-aspect-ratios: join(
+  ((21 9), (16 9), (4 3), (1 1)),
+  $embed-responsive-aspect-ratios
+);
+
+/* 
+ * Typography
+ * 본문 text, heading 등에 대한 Font, line-height, color 정의.
+ */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// 기본폰트 크기로 브라우저의 기본값 (일반적으로`16px`)을 지정.
+$font-size-base: 16px !default;
+// rem 변환 함수에 사용되기 때문에,
+// px / pt / rem 등의 고정된 크기 단위만 지정해야함
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-margin-bottom: map-get($spacers, 0) / 2 !default;
+$headings-font-family: null !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$text-muted: $gray-600 !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+/*
+ * Tables
+ * 테이블 기본 속성값 변수 정의
+ */
+$table-cell-padding: 0.75rem !default;
+$table-caption-color: $text-muted !default;
+
+/* 
+ * form
+ */
+$label-margin-bottom: 0.5rem !default;
+
+/*
+ * Z-index 순서 정의
+ */
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+
+/*
+ * Code
+ */
+$code-font-size: 87.5% !default;
+$code-color: $pink !default;
+$kbd-padding-y: 0.2rem !default;
+$kbd-padding-x: 0.4rem !default;
+$kbd-font-size: $code-font-size !default;
+$kbd-color: $white !default;
+$kbd-bg: $gray-900 !default;
+$pre-color: $gray-900 !default;
+$pre-scrollable-max-height: 340px !default;
+
+/*
+ * Print
+ */
+$print-page-size: a3 !default;
+$print-body-min-width: map-get($grid-breakpoints, "lg") !default;
+
+/*
+* header
+*/
+$header-default-height: 62px;

@@ -1,0 +1,23 @@
+footer.footer {
+  padding: 15px;
+  overflow: hidden;
+  border-top: 1px solid lightgray;
+  div.copyright {
+    float: left;
+  }
+  div.version {
+    float: right;
+  }
+}
+
+@include mob {
+  footer.footer {
+    padding: 10px;
+    font-size: rem(12px);
+    div.copyright {
+      strong {
+        display: block;
+      }
+    }
+  }
+}
