@@ -1,7 +1,9 @@
 footer.footer {
-  padding: 15px;
+  height: $footer-default-height;
+  padding: 15px 15px 0;
   overflow: hidden;
   border-top: 1px solid lightgray;
+  z-index: $zindex-footer;
   div.copyright {
     float: left;
   }
@@ -12,7 +14,8 @@ footer.footer {
 
 @include mob {
   footer.footer {
-    padding: 10px;
+    height: $footer-default-height;
+    padding: 10px 10px 0;
     font-size: rem(12px);
     div.copyright {
       strong {

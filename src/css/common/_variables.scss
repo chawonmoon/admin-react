@@ -211,13 +211,14 @@ $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 
 $transition-base: all 0.3s ease-in-out !default;
 $transition-fade: opacity 0.15s linear !default;
-$transition-collapse: height 0.35s ease !default;
+$transition-collapse: max-height 0.5s ease-in-out !default;
 
-$embed-responsive-aspect-ratios: () !default;
-$embed-responsive-aspect-ratios: join(
-  ((21 9), (16 9), (4 3), (1 1)),
-  $embed-responsive-aspect-ratios
-);
+// 반응형 aspect-ratios에 관련된 부분으로 추정됨 확인 후 삭제
+// $embed-responsive-aspect-ratios: () !default;
+// $embed-responsive-aspect-ratios: join(
+//   ((21 9), (16 9), (4 3), (1 1)),
+//   $embed-responsive-aspect-ratios
+// );
 
 /* 
  * Typography
@@ -276,10 +277,12 @@ $label-margin-bottom: 0.5rem !default;
 /*
  * Z-index 순서 정의
  */
-$zindex-sticky: 1020 !default;
-$zindex-fixed: 1030 !default;
-$zindex-modal-backdrop: 1040 !default;
-$zindex-modal: 1050 !default;
+
+$zindex-footer: 1020 !default;
+$zindex-contentswrap: 1030 !default;
+$zindex-contents: 1040 !default;
+$zindex-sidebar: 1050 !default;
+$zindex-header: 1060 !default;
 
 /*
  * Code
@@ -304,3 +307,16 @@ $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
 * header
 */
 $header-default-height: 62px;
+$footer-default-height: 57px;
+$global-default-height: $header-default-height + $footer-default-height;
+
+/*
+* contents
+*/
+$sidebar-default-width: 235px;
+$sidebar-icon-default-height: 23px;
+
+/*
+* menu color
+*/
+$menu-button-default-color: $white;

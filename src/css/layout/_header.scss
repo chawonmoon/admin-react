@@ -2,12 +2,13 @@ header.header {
   background: $basic;
   position: relative;
   height: $header-default-height;
+  z-index: $zindex-header;
   @include clear;
   h1 {
     float: left;
   }
   .btn_snb {
-    color: $white;
+    color: $menu-button-default-color;
     float: left;
     padding: 0 20px;
     margin-left: 10px;
@@ -20,7 +21,6 @@ header.header {
     }
   }
   .btn_admin_wrap {
-    color: $white;
     position: relative;
     float: right;
     padding: 0 5px;
@@ -90,7 +90,7 @@ header.header {
       button {
         padding: 15px 19px;
         &.btn_admin {
-          color: $white;
+          color: $menu-button-default-color;
           background: $basic;
           font-size: rem(21.5px);
           @include hover {
