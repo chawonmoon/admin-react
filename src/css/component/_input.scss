@@ -1,0 +1,34 @@
+.form-input {
+  $default-color: $gray-700;
+  $default-bg-color: $white;
+  $default-border-radius: $border-radius;
+  $default-border-width: $border-width;
+  $default-border-color: $gray-400;
+  $default-padding-ver: 5px;
+  $default-padding-hor: 10px;
+  $default-line-height: $line-height-base;
+  $default-height: calc(
+    #{($default-padding-ver * 2) + ($default-border-width * 2)} + #{$default-line-height}em
+  );
+
+  display: block;
+  width: 100%;
+  height: $default-height;
+  padding: $default-padding-ver $default-padding-hor;
+  color: $default-color;
+  background-color: $default-bg-color;
+  background-clip: padding-box;
+  border: $default-border-width solid $default-border-color;
+  border-radius: $default-border-radius;
+  transition: $transition-base;
+}
+
+.form-Feedback {
+  $invalid-feedback-color: $danger;
+
+  display: none;
+  width: 100%;
+  margin-top: 4px;
+  font-size: rem(12px);
+  color: $invalid-feedback-color;
+}

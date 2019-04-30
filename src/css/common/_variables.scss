@@ -7,6 +7,7 @@
 // option
 $enable-pointer-cursor-for-buttons: true !default; // button 마우스 커서 컨트롤
 $enable-responsive-font-sizes: true !default; // 반응형 폰트 사이즈
+
 /* 
  * Color system
  */
@@ -79,7 +80,6 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
-$basic: $pink !default; // 기본 테마 컬러
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -203,8 +203,10 @@ $grid-gutter-width: 30px !default;
 
 /* 
  * Components
- * border-radius, box-shadow, transition 등 공통 컴포넌트 속성을 정의.
+ * 공통으로 사용될 컴포넌트 속성을 정의.
  */
+$border-width: 1px !default;
+
 $border-radius: 0.25rem !default;
 
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
@@ -262,6 +264,8 @@ $text-muted: $gray-600 !default;
 
 $dt-font-weight: $font-weight-bold !default;
 
+$component-margin-bottom: 16px;
+
 /*
  * Tables
  * 테이블 기본 속성값 변수 정의
@@ -277,7 +281,6 @@ $label-margin-bottom: 0.5rem !default;
 /*
  * Z-index 순서 정의
  */
-
 $zindex-footer: 1020 !default;
 $zindex-contentswrap: 1030 !default;
 $zindex-contents: 1040 !default;
@@ -304,19 +307,21 @@ $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
 
 /*
-* header
+* 시그니처 색상 셋팅
 */
+$basic: $pink !default; // 기본 테마 컬러
+
+/*
+* 레이아웃
+*/
+// header
 $header-default-height: 62px;
 $footer-default-height: 57px;
 $global-default-height: $header-default-height + $footer-default-height;
 
-/*
-* contents
-*/
+//contents
 $sidebar-default-width: 235px;
 $sidebar-icon-default-height: 23px;
 
-/*
-* menu color
-*/
+// menu color
 $menu-button-default-color: $white;

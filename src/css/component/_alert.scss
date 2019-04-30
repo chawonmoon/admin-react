@@ -1,0 +1,18 @@
+.alert {
+  $default-border-width: $border-width;
+  $default-bg-color: transparent;
+  $default-border-radius: $border-radius;
+
+  position: relative;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  border: $default-border-width solid $default-bg-color;
+  border-radius: $default-border-radius;
+  @each $key, $colors in $theme-colors {
+    &.#{$key} {
+      color: darken($colors, 20);
+      background-color: lighten($colors, 40);
+      border-color: lighten($colors, 10);
+    }
+  }
+}

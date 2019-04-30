@@ -18,6 +18,9 @@
 // Icon 폰트 Index파일
 @import "base/icons/index";
 
+// page util
+@import "layout/rnb";
+
 // Layout
 @import "layout/base";
 @import "layout/skip";
@@ -25,8 +28,16 @@
 @import "layout/footer";
 @import "layout/contents";
 
-// page util
-@import "layout/rnb";
+// components
+@import "component/box";
+@import "component/breadcrumb";
+@import "component/paginations";
+@import "component/buttongroup";
+@import "component/button";
+@import "component/table";
+@import "component/badge";
+@import "component/alert";
+@import "component/input";
 
 // page
 @import "page/login";

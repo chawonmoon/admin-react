@@ -21,8 +21,9 @@ class Login extends Component {
                   id="user_id"
                   placeholder="아이디를 입력해주십시오."
                   title="아이디"
+                  className="form-input"
                 />
-                <p className="Form-Feedback">
+                <p className="form-Feedback">
                   아이디를 확인 후 다시 시도해 주세요
                 </p>
               </div>
@@ -34,14 +35,15 @@ class Login extends Component {
                   id="user_pwd"
                   placeholder="비밀번호를 입력해주십시오."
                   title="비밀번호"
+                  className="form-input"
                 />
-                <p className="Form-Feedback">
+                <p className="form-Feedback">
                   비밀번호를 확인 후 다시 시도해 주세요
                 </p>
               </div>
             </div>
             <div>
-              <button href="#/">
+              <button href="#/" className="btn btn-info full">
                 <i className="ico-user-check" />
                 <span>로그인</span>
               </button>

@@ -24,7 +24,7 @@
     @content;
   }
 }
-//필요없을시 삭제
+
 @mixin plain-hover-focus {
   &,
   &:hover,
