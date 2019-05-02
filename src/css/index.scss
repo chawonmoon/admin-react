@@ -28,7 +28,7 @@
 @import "layout/footer";
 @import "layout/contents";
 
-// components
+// unit
 @import "component/box";
 @import "component/breadcrumb";
 @import "component/paginations";
@@ -38,6 +38,13 @@
 @import "component/badge";
 @import "component/alert";
 @import "component/input";
+@import "component/chatbot";
+@import "component/colorpicker";
+@import "component/fileupload";
+@import "component/dragndrop";
+
+// componenet
+@import "component/selectbox";
 
 // page
 @import "page/login";

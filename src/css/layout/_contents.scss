@@ -1,11 +1,13 @@
-div.admin-contentsWrap {
+div.contentsWrap {
   position: relative;
   min-height: calc(100% - #{$global-default-height});
   overflow-x: hidden;
   overflow-y: auto;
   z-index: $zindex-contentswrap;
+
   div.contents {
     padding: 15px;
+    z-index: $zindex-contents;
     transition: $transition-base;
   }
   &.active {
@@ -19,11 +21,15 @@ div.admin-contentsWrap {
 }
 
 aside.sidebar {
+  $default-font-size: $font-size-base;
+  $default-icon-font-size: $font-size-base;
+
   position: absolute;
   left: $sidebar-default-width * -1;
   width: $sidebar-default-width;
   min-height: 100%;
   background: $basic;
+  z-index: $zindex-sidebar;
   transition: $transition-base;
   li {
     background: transparent;
@@ -38,11 +44,11 @@ aside.sidebar {
         height: $sidebar-icon-default-height;
         line-height: $sidebar-icon-default-height;
         margin-right: 10px;
-        font-size: rem(18px);
+        font-size: $default-icon-font-size;
         vertical-align: top;
         &.downbullet {
           float: right;
-          font-size: rem(18px) !important;
+          font-size: $default-icon-font-size !important;
           margin-right: 0;
           transition: $transition-base;
         }
@@ -50,7 +56,7 @@ aside.sidebar {
       span {
         display: inline-block;
         max-width: calc(100% - 50px); //155px;
-        font-size: rem(16px);
+        font-size: $default-font-size;
         word-break: break-all;
       }
     }
@@ -95,7 +101,16 @@ aside.sidebar {
 }
 
 @include mob {
-  div.admin-contentsWrap {
+  div.contentsWrap {
     min-height: calc(100% - #{$global-default-height});
+    div.contents {
+      position: relative;
+      padding: 15px;
+      left: 0;
+    }
+    &.active div.contents {
+      left: 235px;
+      margin-left: 0;
+    }
   }
 }

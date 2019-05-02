@@ -1,0 +1,32 @@
+figure.resultImg {
+  display: none;
+  img {
+    max-width: 100%;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+.btn-images-file {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  .customFile {
+    opacity: 0;
+    left: -100%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+  }
+  & + .btn-images-del {
+    display: none;
+    margin-left: 5px;
+    vertical-align: top;
+    &.active {
+      display: inline-block;
+    }
+  }
+}

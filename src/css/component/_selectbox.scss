@@ -1,0 +1,21 @@
+.selectbox-wrap,
+.selectboxMulti-wrap {
+  $default-border-radius: $border-radius;
+  $default-border-color: $gray-400;
+  $default-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+
+  .selectbox {
+    > div {
+      border-radius: $default-border-radius;
+    }
+    > span + div {
+      border-color: $default-border-color;
+      box-shadow: $default-shadow;
+    }
+  }
+}
+.selectboxMulti-wrap {
+  .badge {
+    margin-left: 5px;
+  }
+}

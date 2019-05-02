@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Colorpicker, Fileupload } from "../component";
+
 class TableH extends Component {
   render() {
     return (
@@ -59,7 +61,17 @@ class TableH extends Component {
               <th scope="row">
                 <span>기본색상</span>
               </th>
-              <td>컬러피커</td>
+              <td>
+                <Colorpicker />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <span>파일</span>
+              </th>
+              <td>
+                <Fileupload />
+              </td>
             </tr>
             <tr>
               <th scope="row">

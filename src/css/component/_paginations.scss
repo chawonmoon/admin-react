@@ -7,6 +7,7 @@
   $hover-bg-color: $gray-200; // hover 아이템 bg컬러
   $active-color: $white; // 활성화 아이템 텍스트 컬러
   $active-bg-color: $blue; // 활성화 아이템 bg 컬러
+  $default-line-height: $line-height-base;
 
   .pagination {
     overflow: hidden;
@@ -19,7 +20,7 @@
         display: block;
         padding: 8px 12px;
         margin-left: -1px;
-        line-height: 1.25;
+        line-height: $default-line-height;
         color: $default-color;
         background-color: $default-bg-color;
         border: 1px solid $gray-300;
@@ -51,6 +52,20 @@
         color: $active-color;
         background-color: $active-bg-color;
         border-color: $active-bg-color;
+      }
+    }
+  }
+}
+
+@include mob {
+  .pagination-wrap {
+    text-align: center;
+    .pagination {
+      display: inline-block;
+      .page-item {
+        .page-link {
+          padding: 4px 10px;
+        }
       }
     }
   }

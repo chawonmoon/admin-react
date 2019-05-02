@@ -1,4 +1,7 @@
 aside.rnb {
+  $default-font-size: $font-size-base;
+  $default-icon-font-size: $font-size-base + 2;
+
   position: fixed;
   top: 0;
   left: 100%;
@@ -40,11 +43,11 @@ aside.rnb {
         height: $sidebar-icon-default-height;
         line-height: $sidebar-icon-default-height;
         margin-right: 10px;
-        font-size: rem(18px);
+        font-size: $default-icon-font-size;
         vertical-align: top;
         &.downbullet {
           float: right;
-          font-size: rem(18px) !important;
+          font-size: $default-icon-font-size !important;
           margin-right: 0;
           transition: $transition-base;
         }
@@ -52,7 +55,7 @@ aside.rnb {
       span {
         display: inline-block;
         max-width: calc(100% - 50px);
-        font-size: rem(16px);
+        font-size: $default-font-size;
         word-break: break-all;
       }
     }

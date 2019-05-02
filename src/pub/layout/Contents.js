@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 
 import Main from "../page/Main";
-import Login from "../page/Login";
 import Notice from "../page/Notice";
 import Guide from "../page/Guide";
 import Schedule from "../page/Schedule";
@@ -16,7 +15,6 @@ class Contents extends Component {
       <div className="contents">
         <Route exact path="/" component={Main} />
         <Route path="/main" component={Main} />
-        <Route path="/login" component={Login} />
         <Route path="/notice" component={Notice} />
         <Route path="/guide" component={Guide} />
         <Route path="/schedule" component={Schedule} />

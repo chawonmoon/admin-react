@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 //import { HomeLogo } from "images";
 
 class Header extends Component {
@@ -6,9 +7,9 @@ class Header extends Component {
     return (
       <header className="header" id="header">
         <h1>
-          <a href="javascript:void(0);">
+          <Link to="/">
             <img src="https://via.placeholder.com/225x62" alt="더미 로고" />
-          </a>
+          </Link>
         </h1>
         <button className="btn_snb" href="javascript:void(0);">
           <i className="ico-menu" />

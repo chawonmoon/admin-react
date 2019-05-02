@@ -215,13 +215,6 @@ $transition-base: all 0.3s ease-in-out !default;
 $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: max-height 0.5s ease-in-out !default;
 
-// 반응형 aspect-ratios에 관련된 부분으로 추정됨 확인 후 삭제
-// $embed-responsive-aspect-ratios: () !default;
-// $embed-responsive-aspect-ratios: join(
-//   ((21 9), (16 9), (4 3), (1 1)),
-//   $embed-responsive-aspect-ratios
-// );
-
 /* 
  * Typography
  * 본문 text, heading 등에 대한 Font, line-height, color 정의.
@@ -234,7 +227,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 $font-family-base: $font-family-sans-serif !default;
 
 // 기본폰트 크기로 브라우저의 기본값 (일반적으로`16px`)을 지정.
-$font-size-base: 16px !default;
+$font-size-base: 14px !default;
 // rem 변환 함수에 사용되기 때문에,
 // px / pt / rem 등의 고정된 크기 단위만 지정해야함
 
@@ -264,7 +257,7 @@ $text-muted: $gray-600 !default;
 
 $dt-font-weight: $font-weight-bold !default;
 
-$component-margin-bottom: 16px;
+$component-margin-bottom: 15px;
 
 /*
  * Tables
@@ -282,10 +275,10 @@ $label-margin-bottom: 0.5rem !default;
  * Z-index 순서 정의
  */
 $zindex-footer: 1020 !default;
-$zindex-contentswrap: 1030 !default;
-$zindex-contents: 1040 !default;
-$zindex-sidebar: 1050 !default;
-$zindex-header: 1060 !default;
+$zindex-contentswrap: 1010 !default;
+$zindex-contents: 1 !default;
+$zindex-sidebar: 2 !default;
+$zindex-header: 1030 !default;
 
 /*
  * Code

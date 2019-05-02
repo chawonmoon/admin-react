@@ -1,4 +1,6 @@
 header.header {
+  $default-font-size: $font-size-base + 6;
+
   background: $basic;
   position: relative;
   height: $header-default-height;
@@ -12,7 +14,7 @@ header.header {
     float: left;
     padding: 0 20px;
     margin-left: 10px;
-    font-size: rem(20px);
+    font-size: $default-font-size;
     line-height: $header-default-height;
     height: $header-default-height;
     background: $basic;
@@ -62,6 +64,8 @@ header.header {
 
 // 모바일 해상도 대응 768 이하
 @include mob {
+  $default-font-size: $font-size-base + 7.5;
+
   header.header {
     h1 {
       float: none;
@@ -92,7 +96,7 @@ header.header {
         &.btn_admin {
           color: $menu-button-default-color;
           background: $basic;
-          font-size: rem(21.5px);
+          font-size: $default-font-size;
           @include hover {
             background: darken($basic, 7);
           }

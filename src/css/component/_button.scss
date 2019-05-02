@@ -18,7 +18,7 @@
   background-color: $default-bg-color;
   border: $default-border-width solid $default-border-color;
   padding: 6px 12px;
-  margin-left: 5px;
+  margin-right: 5px;
   font-size: $default-font-size;
   line-height: $default-line-height;
   border-radius: $default-border-radius;
@@ -37,8 +37,8 @@
   &.full {
     width: 100%;
   }
-  &:first-child {
-    margin-left: 0;
+  &:last-child {
+    margin-right: 0;
   }
 
   @each $key, $colors in $theme-colors {

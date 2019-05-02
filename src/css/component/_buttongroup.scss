@@ -26,3 +26,11 @@
     }
   }
 }
+
+@include mob {
+  .btn-group {
+    .pagination-wrap {
+      width: 100%;
+    }
+  }
+}

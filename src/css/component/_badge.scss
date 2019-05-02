@@ -1,5 +1,5 @@
 .badge {
-  $default-font-size: $font-size-base - 4;
+  $default-font-size: $font-size-base - 3;
   $default-line-height: $line-height-base - 0.5;
   $default-color: $white;
   $exception-color: $black;
@@ -9,7 +9,7 @@
 
   display: inline-block;
   padding: 3px 6px;
-  margin-left: 5px;
+  margin-right: 5px;
   font-size: $default-font-size;
   font-weight: $default-font-weight;
   line-height: $default-line-height;
@@ -20,8 +20,8 @@
   &.fill {
     border-radius: $default-border-radius-fill;
   }
-  &:first-child {
-    margin-left: 0;
+  &:last-child {
+    margin-right: 0;
   }
 
   @each $key, $colors in $theme-colors {

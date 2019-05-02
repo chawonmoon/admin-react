@@ -1,6 +1,11 @@
 .box {
-}
+  $default-margin-bottom: $component-margin-bottom;
 
-.sample-box {
-  margin-bottom: $component-margin-bottom;
+  &-component {
+    margin-bottom: $default-margin-bottom;
+  }
+
+  &-form {
+    margin-bottom: $default-margin-bottom;
+  }
 }

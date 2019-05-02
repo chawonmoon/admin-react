@@ -1,26 +1,32 @@
 import React, { Component, Fragment } from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Skip from "./layout/Skip";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Contents from "./layout/Contents";
 import Sidebar from "./layout/Sidebar";
 import Rnb from "./utils/Rnb";
+import Login from "./page/Login";
 
 class index extends Component {
   render() {
     return (
       <Router>
-        <Fragment>
-          <Skip />
-          <Header />
-          <div className="admin-contentsWrap active">
-            <Sidebar />
-            <Contents />
-          </div>
-          <Footer />
-          <Rnb />
-        </Fragment>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/">
+            <Fragment>
+              <Skip />
+              <Header />
+              <div className="contentsWrap">
+                <Sidebar />
+                <Contents />
+              </div>
+              <Footer />
+            </Fragment>
+          </Route>
+        </Switch>
+        <Rnb />
       </Router>
     );
   }

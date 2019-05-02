@@ -25,10 +25,16 @@
 
 .form-Feedback {
   $invalid-feedback-color: $danger;
+  $default-feedback-font-size: $font-size-base - 4;
 
   display: none;
+  position: relative;
   width: 100%;
-  margin-top: 4px;
-  font-size: rem(12px);
+  margin: 4px 0;
+  padding-left: 5px;
+  font-size: $default-feedback-font-size;
   color: $invalid-feedback-color;
+  & > i {
+    margin-right: 5px;
+  }
 }
