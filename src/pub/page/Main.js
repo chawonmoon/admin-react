@@ -1,15 +1,34 @@
 import React, { Component } from "react";
-import { Breadcrumb, Pagination, TableV, TableH, Chatbot } from "../unit";
-import { Selectbox, SelectboxMulti, Dragndrop } from "../component";
+import {
+  Breadcrumb,
+  Pagination,
+  TableV,
+  TableH,
+  Chatbot,
+  Select
+} from "../unit";
+import {
+  Selectbox,
+  SelectboxMulti,
+  Dragndrop,
+  Modal,
+  Modalalert,
+  Modalconfirm
+} from "../component";
 
 class Main extends Component {
   render() {
     return (
-      <main className="main">
+      <div className="main">
         <h2>브레드크럼</h2>
         <Breadcrumb />
 
-        <h2>셀렉트 박스</h2>
+        <h2>셀렉트 박스(Select:system)</h2>
+        <div className="box-component">
+          <Select />
+        </div>
+
+        <h2>셀렉트 박스(Select:react-select)</h2>
         <div className="box-component">
           <Selectbox
             selectopt={[
@@ -20,7 +39,7 @@ class Main extends Component {
           />
         </div>
 
-        <h2>셀렉트 박스(Multi)</h2>
+        <h2>셀렉트 박스(Select:react-select | Multi)</h2>
         <div className="box-component">
           <SelectboxMulti
             selectopt={[
@@ -31,9 +50,120 @@ class Main extends Component {
           />
         </div>
 
+        <h2>인풋(input)</h2>
+        <div className="box-component">
+          <div className="box-form">
+            <input
+              type="text"
+              className="form-input"
+              title="샘플 인풋 텍스트"
+              placeholder="텍스트를 입력해주세요."
+            />
+            <p className="form-Feedback">
+              <i className="ico-cancel-circle" />
+              <span>아이디를 확인 후 다시 시도해 주세요</span>
+            </p>
+          </div>
+          <div className="box-form">
+            <input
+              type="password"
+              className="form-input"
+              title="샘플 인풋 패스워드"
+              placeholder="패스워드를 입력해주세요."
+            />
+            <p className="form-Feedback">
+              <i className="ico-cancel-circle" />
+              <span>비밀번호를 확인 후 다시 시도해 주세요</span>
+            </p>
+          </div>
+          <div className="box-form">
+            <input
+              type="search"
+              className="form-input"
+              title="샘플 인풋 서치"
+              placeholder="검색어를 입력해주세요."
+            />
+            <p className="form-Feedback">
+              <i className="ico-cancel-circle" />
+              <span>검색어를 확인 후 다시 시도해 주세요</span>
+            </p>
+          </div>
+        </div>
+
+        <h2>게시판 검색 그룹</h2>
+        <div className="board-group">
+          <div className="select numbering">
+            <select>
+              <option value="10">목록 10개</option>
+              <option value="30">목록 20개</option>
+              <option value="50">목록 50개</option>
+            </select>
+            <span className="bullet">
+              <svg
+                height="20"
+                width="20"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z" />
+              </svg>
+            </span>
+          </div>
+          <div className="searching">
+            <div className="select">
+              <select>
+                <option value="0">제목 + 내용</option>
+                <option value="1">제목</option>
+                <option value="2">내용</option>
+              </select>
+              <span className="bullet">
+                <svg
+                  height="20"
+                  width="20"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z" />
+                </svg>
+              </span>
+            </div>
+            <div className="searchbox">
+              <input
+                type="search"
+                className="form-input"
+                title="샘플 인풋 서치"
+                placeholder="검색어를 입력해주세요."
+              />
+              <button className="btn">
+                <i className="ico-search" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="board-group">
+          <div className="numbering">
+            <SelectboxMulti
+              selectopt={[
+                { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                { value: "memberBlock", label: "memberBlock", badge: "v2" },
+                { value: "contractBlock", label: "contractBlock", badge: "v3" }
+              ]}
+            />
+          </div>
+        </div>
+
         <h2>테이블 Ver</h2>
-        <TableV />
-        <TableH />
+        <div className="box-component">
+          <TableV />
+        </div>
+
+        <h2>테이블 Hor</h2>
+        <div className="box-component">
+          <TableH />
+        </div>
 
         <h2>버튼</h2>
         <h3>기본 버튼</h3>
@@ -189,52 +319,37 @@ class Main extends Component {
           <div className="alert dark">경고 dark</div>
         </div>
 
-        <h2>인풋</h2>
+        <h2>챗봇</h2>
         <div className="box-component">
-          <div className="box-form">
-            <input
-              type="text"
-              className="form-input"
-              title="샘플 인풋 텍스트"
-              placeholder="텍스트를 입력해주세요."
-            />
-            <p className="form-Feedback">
-              <i className="ico-cancel-circle" />
-              <span>아이디를 확인 후 다시 시도해 주세요</span>
-            </p>
-          </div>
-          <div className="box-form">
-            <input
-              type="password"
-              className="form-input"
-              title="샘플 인풋 패스워드"
-              placeholder="패스워드를 입력해주세요."
-            />
-            <p className="form-Feedback">
-              <i className="ico-cancel-circle" />
-              <span>비밀번호를 확인 후 다시 시도해 주세요</span>
-            </p>
-          </div>
-          <div className="box-form">
-            <input
-              type="search"
-              className="form-input"
-              title="샘플 인풋 서치"
-              placeholder="검색어를 입력해주세요."
-            />
-            <p className="form-Feedback">
-              <i className="ico-cancel-circle" />
-              <span>검색어를 확인 후 다시 시도해 주세요</span>
-            </p>
-          </div>
+          <Chatbot />
         </div>
 
-        <h2>챗봇</h2>
-        <Chatbot />
-
         <h2>드래그 앤 드롭 리스트</h2>
-        <Dragndrop />
-      </main>
+        <div className="box-component">
+          <Dragndrop />
+        </div>
+
+        <h2>모달팝업</h2>
+        <div className="box-component">
+          <Modal />
+          <Modalalert />
+          <Modalconfirm />
+        </div>
+
+        <h2>스피너</h2>
+        <div className="box-component">
+          <div className="spinner-roller">
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
     );
   }
 }

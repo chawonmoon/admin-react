@@ -7,6 +7,7 @@ import Contents from "./layout/Contents";
 import Sidebar from "./layout/Sidebar";
 import Rnb from "./utils/Rnb";
 import Login from "./page/Login";
+import Spinner from "./unit/Spinner";
 
 class index extends Component {
   render() {
@@ -18,7 +19,7 @@ class index extends Component {
             <Fragment>
               <Skip />
               <Header />
-              <div className="contentsWrap">
+              <div className="contentsWrap active">
                 <Sidebar />
                 <Contents />
               </div>

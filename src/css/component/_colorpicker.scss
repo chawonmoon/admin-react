@@ -24,8 +24,11 @@
         border-bottom-left-radius: 0;
       }
       &[readonly] {
+        width: 100%;
+        max-width: 150px;
         background: #fff;
         text-indent: 5px;
+        border: 1px solid #ccc;
       }
     }
   }

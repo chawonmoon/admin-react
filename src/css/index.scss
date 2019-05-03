@@ -2,7 +2,6 @@
 @import "common/functions";
 
 // mixin
-@import "common/mixin/rfs";
 @import "common/mixin/hover";
 @import "common/mixin/breakpoint";
 
@@ -29,22 +28,25 @@
 @import "layout/contents";
 
 // unit
-@import "component/box";
-@import "component/breadcrumb";
-@import "component/paginations";
-@import "component/buttongroup";
-@import "component/button";
-@import "component/table";
-@import "component/badge";
-@import "component/alert";
-@import "component/input";
-@import "component/chatbot";
-@import "component/colorpicker";
-@import "component/fileupload";
-@import "component/dragndrop";
+@import "unit/alert";
+@import "unit/badge";
+@import "unit/box";
+@import "unit/breadcrumb";
+@import "unit/button";
+@import "unit/groups";
+@import "unit/chatbot";
+@import "unit/fileupload";
+@import "unit/input";
+@import "unit/paginations";
+@import "unit/select";
+@import "unit/spinner";
+@import "unit/table";
 
 // componenet
 @import "component/selectbox";
+@import "component/colorpicker";
+@import "component/dragndrop";
+@import "component/modal";
 
 // page
 @import "page/login";

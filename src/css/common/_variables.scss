@@ -99,33 +99,6 @@ $theme-colors: map-merge(
 // 색상 점프 요청을위한 특정 점프 포인트 설정
 $theme-color-interval: 8% !default;
 
-/* 
- * Spacing
- * 요소의 기본 간격(공간) 제어.
- * 더 많은 변형이 필요할 경우 $spacers 맵에 항목을 추가할 수 있다.
- */
-$spacer: 1rem !default;
-$spacers: () !default;
-$spacers: map-merge(
-  (
-    0: 0,
-    1: (
-      $spacer * 0.25
-    ),
-    2: (
-      $spacer * 0.5
-    ),
-    3: $spacer,
-    4: (
-      $spacer * 1.5
-    ),
-    5: (
-      $spacer * 3
-    )
-  ),
-  $spacers
-);
-
 /*
  * Size
  * 크기 제어
@@ -247,7 +220,7 @@ $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
-$headings-margin-bottom: map-get($spacers, 0) / 2 !default;
+$headings-margin-bottom: 0 !default;
 $headings-font-family: null !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
@@ -257,6 +230,7 @@ $text-muted: $gray-600 !default;
 
 $dt-font-weight: $font-weight-bold !default;
 
+$component-margin-top: 5px;
 $component-margin-bottom: 15px;
 
 /*
@@ -279,6 +253,8 @@ $zindex-contentswrap: 1010 !default;
 $zindex-contents: 1 !default;
 $zindex-sidebar: 2 !default;
 $zindex-header: 1030 !default;
+$zindex-modal: 1040 !default;
+$zindex-spinner: 1050 !default;
 
 /*
  * Code
@@ -300,13 +276,16 @@ $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
 
 /*
-* 시그니처 색상 셋팅
-*/
+ * 시그니처 색상 셋팅
+ */
 $basic: $pink !default; // 기본 테마 컬러
 
+// 기본 dimmde 컬러(모달 배경)
+$overlay-base-color: rgba(0, 0, 0, 0.75);
+
 /*
-* 레이아웃
-*/
+ * 레이아웃
+ */
 // header
 $header-default-height: 62px;
 $footer-default-height: 57px;

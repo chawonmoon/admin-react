@@ -1,8 +1,3 @@
-// stylelint-disable at-rule-no-vendor-prefix,
-// declaration-no-important,
-// selector-no-qualifying-type,
-// property-no-vendor-prefix
-
 // Reset
 //
 // Normalization of HTML elements, manually forked from Normalize.css to remove
@@ -55,7 +50,7 @@ section {
 body {
   margin: 0; // 1
   font-family: $font-family-base;
-  @include font-size($font-size-base);
+  font-size: $font-size-base;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
@@ -169,7 +164,8 @@ strong {
 }
 
 small {
-  @include font-size(80%); // 모든 브라우저에서 글꼴 크기 통일.
+  // 모든 브라우저에서 글꼴 크기 통일.
+  font-size: 80%;
 }
 
 //
@@ -178,7 +174,7 @@ small {
 sub,
 sup {
   position: relative;
-  @include font-size(75%);
+  font-size: 75%;
   line-height: 0;
   vertical-align: baseline;
 }
@@ -233,9 +229,8 @@ code,
 kbd,
 samp {
   font-family: $font-family-monospace;
-  @include font-size(
-    1em
-  ); // 모든 브라우저에서 글꼴 단위를 `em`으로 수정하십시오.
+  // 모든 브라우저에서 글꼴 단위를 `em`으로 수정하십시오.
+  font-size: 1em;
 }
 
 pre {
@@ -327,7 +322,7 @@ optgroup,
 textarea {
   margin: 0; // Firefox 및 Safari에서 `margin` 제거
   font-family: inherit;
-  @include font-size(inherit);
+  font-size: inherit;
   line-height: inherit;
 }
 
@@ -421,7 +416,8 @@ legend {
   max-width: 100%; // 1
   padding: 0;
   margin-bottom: 0.5rem;
-  @include font-size(1.5rem);
+
+  font-size: 1.5rem;
   line-height: inherit;
   color: inherit; // 2
   white-space: normal; // 1

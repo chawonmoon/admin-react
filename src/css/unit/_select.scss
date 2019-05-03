@@ -1,0 +1,56 @@
+.select {
+  $default-border-radius: $border-radius;
+  $default-border-color: $gray-400;
+  $default-shadow: 0 0 0 1px rgba(77, 144, 254, 1);
+  $default-bullet-bg-color: $white;
+  $default-border-width: $border-width;
+  $default-right-padding: 30px;
+
+  position: relative;
+  vertical-align: top;
+  select {
+    position: relative;
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: $default-border-width solid $default-border-color;
+    border-radius: $default-border-radius;
+    border-color: $default-border-color;
+    background: transparent;
+    padding: 7px $default-right-padding 8px 10px;
+    z-index: 1;
+
+    &::-ms-expand {
+      display: none;
+    }
+    @at-root select:focus + .bullet svg {
+      opacity: 1;
+    }
+  }
+
+  .bullet {
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: $default-right-padding - 2px;
+    height: calc(100% - #{$default-border-width * 2});
+    padding: 5px 0 0 2px;
+    margin-right: 2px;
+    background: $default-bullet-bg-color;
+    z-index: 1;
+    svg {
+      opacity: 0.25;
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 20px;
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      border-left: $default-border-width solid $default-border-color;
+    }
+  }
+}

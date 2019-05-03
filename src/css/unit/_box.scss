@@ -1,7 +1,9 @@
 .box {
+  $default-margin-top: $component-margin-top;
   $default-margin-bottom: $component-margin-bottom;
 
   &-component {
+    margin-top: $default-margin-top;
     margin-bottom: $default-margin-bottom;
   }
 

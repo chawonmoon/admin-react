@@ -11,13 +11,13 @@ class Rnb extends Component {
         <ul>
           <li>
             <NavLink to="/main" activeClassName="active">
-              <i className="ico-checkbox-unchecked" />
+              <i className="ico-checkbox-checked" />
               <span>메인</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/login" activeClassName="active">
-              <i className="ico-checkbox-unchecked" />
+              <i className="ico-checkbox-checked" />
               <span>로그인</span>
             </NavLink>
           </li>
