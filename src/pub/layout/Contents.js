@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 
 import Main from "../page/Main";
 import Notice from "../page/Notice";
+import NoticeRead from "../page/NoticeRead";
 import Guide from "../page/Guide";
 import Schedule from "../page/Schedule";
 import Messege from "../page/Messege";
@@ -15,7 +16,8 @@ class Contents extends Component {
       <div className="contents">
         <Route exact path="/" component={Main} />
         <Route path="/main" component={Main} />
-        <Route path="/notice" component={Notice} />
+        <Route exact path="/notice" component={Notice} />
+        <Route path="/notice/read" component={NoticeRead} />
         <Route path="/guide" component={Guide} />
         <Route path="/schedule" component={Schedule} />
         <Route path="/messege" component={Messege} />

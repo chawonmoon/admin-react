@@ -19,6 +19,9 @@
   & > :nth-child(2) {
     float: right;
   }
+  & > .pagination-wrap + .btn {
+    padding: 8px 12px;
+  }
   &.modal {
     background: $excption-bg-color;
     padding-bottom: 0;
@@ -38,7 +41,6 @@
 .board-group {
   $default-btn-bg-color: $basic;
   $default-select-width: 150px;
-
   $default-searchbox-width: 290px;
   $default-margin-bottom: $component-margin-bottom;
 
@@ -74,7 +76,7 @@
       .btn {
         background: $default-btn-bg-color;
         vertical-align: top;
-        padding: 7px 12px 8px;
+        padding: 7px 9px 8px 15px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
       }

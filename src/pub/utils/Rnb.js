@@ -30,13 +30,13 @@ class Rnb extends Component {
             <ul className="sub">
               <li>
                 <NavLink to="/notice" activeClassName="active">
-                  <i className="ico-checkbox-unchecked" />
+                  <i className="ico-checkbox-checked" />
                   <span>게시판 목록</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/notice" activeClassName="active">
-                  <i className="ico-checkbox-unchecked" />
+                <NavLink to="/notice/read" activeClassName="active">
+                  <i className="ico-checkbox-checked" />
                   <span>게시판 상세</span>
                 </NavLink>
               </li>

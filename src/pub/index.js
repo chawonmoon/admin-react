@@ -19,7 +19,7 @@ class index extends Component {
             <Fragment>
               <Skip />
               <Header />
-              <div className="contentsWrap active">
+              <div className="contentsWrap">
                 <Sidebar />
                 <Contents />
               </div>

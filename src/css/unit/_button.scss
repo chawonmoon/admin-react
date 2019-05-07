@@ -51,8 +51,10 @@
       background-color: $colors;
       border-color: $colors;
       @include hover {
-        background-color: darken($colors, 7);
-        border-color: darken($colors, 7);
+        &:not(:disabled) {
+          background-color: darken($colors, 7);
+          border-color: darken($colors, 7);
+        }
       }
     }
   }
