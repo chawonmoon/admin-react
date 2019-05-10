@@ -68,6 +68,10 @@ class Fileupload extends Component {
           <i className="ico-bin" />
           <span>이미지 삭제</span>
         </button>
+        <p className="form-Feedback">
+          <i className="ico-cancel-circle" />
+          <span>필수 입력 값입니다.</span>
+        </p>
       </div>
     );
   }

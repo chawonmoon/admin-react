@@ -12,11 +12,23 @@
       border-color: $default-border-color;
       box-shadow: $default-shadow;
     }
+    div[class$="-multiValue"] {
+      > div {
+        text-overflow: clip;
+        white-space: normal;
+      }
+    }
   }
-}
-.selectboxMulti-wrap {
-  min-width: 220px;
-  .badge {
-    margin-left: 5px;
+  @at-root .selectboxMulti-wrap {
+    min-width: 220px;
+    .badge {
+      margin-left: 5px;
+    }
+  }
+
+  @include mob {
+    @at-root .selectboxMulti-wrap {
+      min-width: 100%;
+    }
   }
 }

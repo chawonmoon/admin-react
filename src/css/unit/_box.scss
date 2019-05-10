@@ -1,6 +1,9 @@
 .box {
   $default-margin-top: $component-margin-top;
   $default-margin-bottom: $component-margin-bottom;
+  $default-border-width: $border-width;
+  $default-border-color: $gray-400;
+  $default-border-radius: $border-radius;
 
   &-component {
     margin-top: $default-margin-top;
@@ -9,5 +12,16 @@
 
   &-form {
     margin-bottom: $default-margin-bottom;
+  }
+
+  &-border {
+    border: $default-border-width solid $default-border-color;
+    border-radius: $default-border-radius;
+    padding: 15px 15px 0 15px;
+    h2 {
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: $default-border-width solid $default-border-color;
+    }
   }
 }

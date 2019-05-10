@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import NoticeWrite from "../page/NoticeWrite";
+import NoticeModal from "./NoticeModal";
 
 class Notice extends Component {
   render() {
@@ -362,7 +362,7 @@ class Notice extends Component {
               </li>
             </ul>
           </nav>
-          <NoticeWrite />
+          <NoticeModal />
         </div>
       </Fragment>
     );

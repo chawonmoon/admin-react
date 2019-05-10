@@ -269,6 +269,7 @@ class Main extends Component {
           <span className="badge primary">Primary</span>
           <span className="badge secondary">Secondary</span>
           <span className="badge success">Success</span>
+          <span className="badge use">Use</span>
           <span className="badge danger">Danger</span>
           <span className="badge warning">Warning</span>
           <span className="badge info">Info</span>
@@ -280,6 +281,7 @@ class Main extends Component {
           <span className="badge primary fill">Primary</span>
           <span className="badge secondary fill">Secondary</span>
           <span className="badge success fill">Success</span>
+          <span className="badge use fill">Use</span>
           <span className="badge danger fill">Danger</span>
           <span className="badge warning fill">Warning</span>
           <span className="badge info fill">Info</span>
@@ -296,6 +298,9 @@ class Main extends Component {
           </a>
           <a href="javascript:void(0);" className="badge success">
             Success
+          </a>
+          <a href="javascript:void(0);" className="badge use">
+            Use
           </a>
           <a href="javascript:void(0);" className="badge danger">
             Danger
@@ -348,7 +353,7 @@ class Main extends Component {
             {(function() {
               let balls = [];
               for (let i = 0; i < 7; i++) {
-                balls.push(<div />);
+                balls.push(<div key={i} />);
               }
               return balls;
             })()}

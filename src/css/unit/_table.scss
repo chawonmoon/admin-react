@@ -54,6 +54,9 @@
         }
       }
     }
+    @at-root .table.horizon {
+
+    }
 
     th,
     td {
@@ -79,6 +82,11 @@
           padding-left: 10px;
           padding-right: 10px;
         }
+      }
+    }
+    .tableimg {
+      img {
+        max-width: 100%;
       }
     }
   }

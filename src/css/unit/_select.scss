@@ -5,6 +5,8 @@
   $default-bullet-bg-color: $white;
   $default-border-width: $border-width;
   $default-right-padding: 30px;
+  $default-inline-width: 130px;
+  $default-inline-margin-right: 10px;
 
   position: relative;
   vertical-align: top;
@@ -17,8 +19,8 @@
     border-radius: $default-border-radius;
     border-color: $default-border-color;
     background: transparent;
-    padding: 7px $default-right-padding 8px 10px;
-    z-index: 1;
+    padding: 7px $default-right-padding+10 8px 10px;
+    z-index: 2;
 
     &::-ms-expand {
       display: none;
@@ -52,5 +54,11 @@
       left: -7px;
       border-left: $default-border-width solid $default-border-color;
     }
+  }
+
+  &.inline {
+    display: inline-block;
+    width: $default-inline-width;
+    margin-right: $default-inline-margin-right;
   }
 }

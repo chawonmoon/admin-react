@@ -43,6 +43,7 @@
   $default-select-width: 150px;
   $default-searchbox-width: 290px;
   $default-margin-bottom: $component-margin-bottom;
+  $default-border-radius: $border-radius;
 
   margin-bottom: $default-margin-bottom;
   @include clear;
@@ -65,6 +66,7 @@
     float: right;
     .searchbox {
       display: inline-block;
+      vertical-align: top;
       width: $default-searchbox-width;
       margin-left: 5px;
       .form-input[type="search"] {

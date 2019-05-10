@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import BlockModModal from "../page/BlockModModal";
 
 class Dragndrop extends Component {
   static defaultProps = {
@@ -83,10 +84,7 @@ class Dragndrop extends Component {
                         </span>
                       </p>
                       <div className="box-inline">
-                        <button className="btn btn-warning sm">
-                          <i className="ico-pencil2" />
-                          <span>수정</span>
-                        </button>
+                        <BlockModModal />
                         <button className="btn btn-danger sm">
                           <i className="ico-bin" />
                           <span>삭제</span>
