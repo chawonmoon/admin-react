@@ -7,7 +7,7 @@ class Footer extends Component {
         <div className="copyright">
           <strong>
             Copyright © 2019&nbsp;
-            <a href="http://www.seoulgas.co.kr">Seoul City Gas</a>.&nbsp;
+            <a href="https://chawonmoon.github.io/">chawonmoon.github.io</a>.&nbsp;
           </strong>
           <span>All rights reserved.</span>
         </div>
