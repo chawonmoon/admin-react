@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import CKEditor from "ckeditor4-react";
+import React, { Component, Fragment } from 'react';
+import CKEditor from 'ckeditor4-react';
 
 class NoticeWrite extends Component {
   render() {
@@ -24,7 +24,7 @@ class NoticeWrite extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "15%" }}>
+                <th scope="row" style={{ width: '15%' }}>
                   <span>제목</span>
                 </th>
                 <td>

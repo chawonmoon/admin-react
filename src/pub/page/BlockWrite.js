@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
-import CKEditor from "ckeditor4-react";
-import { SelectboxMulti, Fileupload } from "../component";
+import React, { Component, Fragment } from 'react';
+import CKEditor from 'ckeditor4-react';
+import { SelectboxMulti, Fileupload } from '../component';
 
 class BlockWrite extends Component {
   render() {
@@ -27,7 +27,7 @@ class BlockWrite extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "25%" }}>
+                <th scope="row" style={{ width: '25%' }}>
                   <span>블록명</span>
                 </th>
                 <td>
@@ -52,7 +52,7 @@ class BlockWrite extends Component {
                     config={{
                       height: 70,
                       toolbar: [], // 텍스트만 입력되기때문에 툴바를 삭제
-                      startupMode: "source", // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
+                      startupMode: 'source', // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
                       resize_enabled: false // 사용자 리사이즈를 삭제
                     }}
                     data="납부 실시간 조회"
@@ -68,7 +68,7 @@ class BlockWrite extends Component {
                     config={{
                       height: 70,
                       toolbar: [], // 텍스트만 입력되기때문에 툴바를 삭제
-                      startupMode: "source", // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
+                      startupMode: 'source', // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
                       resize_enabled: false // 사용자 리사이즈를 삭제
                     }}
                     data="납부 실시간 조회"
@@ -126,16 +126,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />
@@ -218,16 +218,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />
@@ -413,16 +413,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />
@@ -493,16 +493,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />
@@ -515,16 +515,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />
@@ -537,16 +537,16 @@ class BlockWrite extends Component {
                 <td>
                   <SelectboxMulti
                     selectopt={[
-                      { value: "guestBlock", label: "guestBlock", badge: "v1" },
+                      { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
                       {
-                        value: "memberBlock",
-                        label: "memberBlock",
-                        badge: "v2"
+                        value: 'memberBlock',
+                        label: 'memberBlock',
+                        badge: 'v2'
                       },
                       {
-                        value: "contractBlock",
-                        label: "contractBlock",
-                        badge: "v3"
+                        value: 'contractBlock',
+                        label: 'contractBlock',
+                        badge: 'v3'
                       }
                     ]}
                   />

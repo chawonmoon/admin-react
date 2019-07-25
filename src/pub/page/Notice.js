@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import NoticeModal from "./NoticeModal";
+import React, { Component, Fragment } from 'react';
+import NoticeModal from './NoticeModal';
 
 class Notice extends Component {
   render() {
@@ -79,19 +79,19 @@ class Notice extends Component {
             <caption>세로형 테이블 샘플</caption>
             <thead>
               <tr>
-                <th scope="col" style={{ width: "7%" }}>
+                <th scope="col" style={{ width: '7%' }}>
                   <span>번호</span>
                 </th>
-                <th scope="col" style={{ width: "auto" }}>
+                <th scope="col" style={{ width: 'auto' }}>
                   <span>제목</span>
                 </th>
-                <th scope="col" style={{ width: "10%" }}>
+                <th scope="col" style={{ width: '10%' }}>
                   <span>상태</span>
                 </th>
-                <th scope="col" style={{ width: "25%" }}>
+                <th scope="col" style={{ width: '25%' }}>
                   <span>게시일시</span>
                 </th>
-                <th scope="col" style={{ width: "15%" }}>
+                <th scope="col" style={{ width: '15%' }}>
                   <span>등록일시</span>
                 </th>
               </tr>

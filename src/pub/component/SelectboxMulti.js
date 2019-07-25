@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Select, { components } from "react-select";
+import React, { Component } from 'react';
+import Select, { components } from 'react-select';
 
 class SelectboxMulti extends Component {
   static defaultProps = {
-    selectopt: [{ value: 0, label: "선택 항목을 입력하세요.", badge: "v1" }]
+    selectopt: [{ value: 0, label: '선택 항목을 입력하세요.', badge: 'v1' }]
   };
 
   state = {
@@ -13,11 +13,11 @@ class SelectboxMulti extends Component {
   // 셀렉트박스 onChange 핸들러 함수(인자값은 option형식의 값만 반환된)
   changeHandler = selectedOption => {
     this.setState({ selectedOption });
-    console.log("선택된 옵션값:", selectedOption);
+    console.log('선택된 옵션값:', selectedOption);
   };
   keydownHandler = () => {
     // 필요없을때는 삭제
-    console.log("이벤트: keydownHandler");
+    console.log('이벤트: keydownHandler');
   };
 
   render() {
@@ -32,7 +32,7 @@ class SelectboxMulti extends Component {
           isSearchable={true}
           placeholder="실행함수를 입력하세요."
           noOptionsMessage={() => {
-            return "유효한 함수가 아닙니다.";
+            return '유효한 함수가 아닙니다.';
           }}
           className="selectbox "
           isMulti

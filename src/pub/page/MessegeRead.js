@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import NoticeModal from "./NoticeModal";
+import React, { Component, Fragment } from 'react';
+import NoticeModal from './NoticeModal';
 
 class MessegeRead extends Component {
   render() {
@@ -27,7 +27,7 @@ class MessegeRead extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "150px" }}>
+                <th scope="row" style={{ width: '150px' }}>
                   <span>랜덤 메시지 함수명</span>
                 </th>
                 <td>
@@ -90,16 +90,16 @@ class MessegeRead extends Component {
               <caption>세로형 테이블 샘플</caption>
               <thead>
                 <tr>
-                  <th scope="col" style={{ width: "auto" }}>
+                  <th scope="col" style={{ width: 'auto' }}>
                     <span>아이템 이름</span>
                   </th>
-                  <th scope="col" style={{ width: "12%" }}>
+                  <th scope="col" style={{ width: '12%' }}>
                     <span>시작</span>
                   </th>
-                  <th scope="col" style={{ width: "12%" }}>
+                  <th scope="col" style={{ width: '12%' }}>
                     <span>종료</span>
                   </th>
-                  <th scope="col" style={{ width: "20%" }}>
+                  <th scope="col" style={{ width: '20%' }}>
                     <span>&nbsp;</span>
                   </th>
                 </tr>

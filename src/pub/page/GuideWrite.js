@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
-import CKEditor from "ckeditor4-react";
-import { Fileupload } from "../component";
+import React, { Component, Fragment } from 'react';
+import CKEditor from 'ckeditor4-react';
+import { Fileupload } from '../component';
 
 class GuideWrite extends Component {
   render() {
@@ -25,7 +25,7 @@ class GuideWrite extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "15%" }}>
+                <th scope="row" style={{ width: '15%' }}>
                   <span>제목</span>
                 </th>
                 <td>

@@ -1,24 +1,24 @@
-import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
-import Main from "../page/Main";
-import Notice from "../page/Notice";
-import NoticeRead from "../page/NoticeRead";
-import NoticeWrite from "../page/NoticeWrite";
-import Guide from "../page/Guide";
-import GuideWrite from "../page/GuideWrite";
-import Schedule from "../page/Schedule";
-import ScheduleRead from "../page/ScheduleRead";
-import ScheduleWrite from "../page/ScheduleWrite";
-import User from "../page/User";
-import Push from "../page/Push";
-import Messege from "../page/Messege";
-import MessegeRead from "../page/MessegeRead";
-import MessegeWrite from "../page/MessegeWrite";
-import MessegeRandomItem from "../page/MessegeRandomItem";
-import Block from "../page/Block";
-import BlockRead from "../page/BlockRead";
-import BlockWrite from "../page/BlockWrite";
+import Main from '../page/Main';
+import Notice from '../page/Notice';
+import NoticeRead from '../page/NoticeRead';
+import NoticeWrite from '../page/NoticeWrite';
+import Guide from '../page/Guide';
+import GuideWrite from '../page/GuideWrite';
+import Schedule from '../page/Schedule';
+import ScheduleRead from '../page/ScheduleRead';
+import ScheduleWrite from '../page/ScheduleWrite';
+import User from '../page/User';
+import Push from '../page/Push';
+import Messege from '../page/Messege';
+import MessegeRead from '../page/MessegeRead';
+import MessegeWrite from '../page/MessegeWrite';
+import MessegeRandomItem from '../page/MessegeRandomItem';
+import Block from '../page/Block';
+import BlockRead from '../page/BlockRead';
+import BlockWrite from '../page/BlockWrite';
 
 class Contents extends Component {
   render() {

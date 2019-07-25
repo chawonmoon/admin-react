@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
 class ScheduleRead extends Component {
   render() {
@@ -24,7 +24,7 @@ class ScheduleRead extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "7%" }}>
+                <th scope="row" style={{ width: '7%' }}>
                   <span>내용</span>
                 </th>
                 <td>

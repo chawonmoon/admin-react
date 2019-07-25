@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { ChromePicker } from "react-color";
+import React, { Component } from 'react';
+import { ChromePicker } from 'react-color';
 
 class Colorpicker extends Component {
   static defaultProps = {
     color: {
-      background: "#000000"
+      background: '#000000'
     }
   };
 

@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import BlockModal from "./BlockModal";
+import React, { Component, Fragment } from 'react';
+import BlockModal from './BlockModal';
 
 class BlockRead extends Component {
   render() {
@@ -23,7 +23,7 @@ class BlockRead extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "25%" }}>
+                <th scope="row" style={{ width: '25%' }}>
                   <span>블록명</span>
                 </th>
                 <td>
@@ -248,12 +248,12 @@ class BlockRead extends Component {
               </div>
               <div className="user">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
               <div className="user result">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
             </dd>
@@ -285,12 +285,12 @@ class BlockRead extends Component {
               </div>
               <div className="user">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
               <div className="user result">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
             </dd>
@@ -322,12 +322,12 @@ class BlockRead extends Component {
               </div>
               <div className="user">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
               <div className="user result">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
             </dd>
@@ -359,12 +359,12 @@ class BlockRead extends Component {
               </div>
               <div className="user">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
               <div className="user result">
                 <p>
-                  <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                  <span>{'${requestYm} 청구요금을 알려줘.'}</span>
                 </p>
               </div>
             </dd>

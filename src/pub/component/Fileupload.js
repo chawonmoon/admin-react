@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Fileupload extends Component {
   static defaultProps = {
-    inputValue: "파일을 선택해 주세요.",
+    inputValue: '파일을 선택해 주세요.',
     srcImg: null
   };
 
@@ -22,7 +22,7 @@ class Fileupload extends Component {
   };
 
   deleteHandler = () => {
-    if (this.inputFile.files[0]) this.inputFile.value = "";
+    if (this.inputFile.files[0]) this.inputFile.value = '';
     this.setState(state => ({ inputValue: null, srcImg: null, active: false }));
   };
 
@@ -37,7 +37,7 @@ class Fileupload extends Component {
   render() {
     return (
       <div className="form-group">
-        <figure className={"resultImg " + (this.state.active ? "active" : "")}>
+        <figure className={'resultImg ' + (this.state.active ? 'active' : '')}>
           <img src={this.state.srcImg} alt={this.state.inputValue} />
         </figure>
         <div className="btn-images-file">
@@ -60,8 +60,8 @@ class Fileupload extends Component {
         </div>
         <button
           className={
-            "btn btn-danger btn-images-del " +
-            (this.state.active ? "active" : "")
+            'btn btn-danger btn-images-del ' +
+            (this.state.active ? 'active' : '')
           }
           onClick={this.deleteHandler}
         >

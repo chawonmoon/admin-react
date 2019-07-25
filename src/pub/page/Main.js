@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Breadcrumb,
   Pagination,
@@ -6,7 +6,7 @@ import {
   TableH,
   Chatbot,
   Select
-} from "../unit";
+} from '../unit';
 import {
   Selectbox,
   SelectboxMulti,
@@ -14,7 +14,7 @@ import {
   Modal,
   Modalalert,
   Modalconfirm
-} from "../component";
+} from '../component';
 
 class Main extends Component {
   render() {
@@ -32,9 +32,9 @@ class Main extends Component {
         <div className="box-component">
           <Selectbox
             selectopt={[
-              { value: 10, label: "목록 10개" },
-              { value: 20, label: "목록 20개" },
-              { value: 50, label: "목록 50개" }
+              { value: 10, label: '목록 10개' },
+              { value: 20, label: '목록 20개' },
+              { value: 50, label: '목록 50개' }
             ]}
           />
         </div>
@@ -43,9 +43,9 @@ class Main extends Component {
         <div className="box-component">
           <SelectboxMulti
             selectopt={[
-              { value: "guestBlock", label: "guestBlock", badge: "v1" },
-              { value: "memberBlock", label: "memberBlock", badge: "v2" },
-              { value: "contractBlock", label: "contractBlock", badge: "v3" }
+              { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
+              { value: 'memberBlock', label: 'memberBlock', badge: 'v2' },
+              { value: 'contractBlock', label: 'contractBlock', badge: 'v3' }
             ]}
           />
         </div>
@@ -148,12 +148,12 @@ class Main extends Component {
             <div className="numbering">
               <SelectboxMulti
                 selectopt={[
-                  { value: "guestBlock", label: "guestBlock", badge: "v1" },
-                  { value: "memberBlock", label: "memberBlock", badge: "v2" },
+                  { value: 'guestBlock', label: 'guestBlock', badge: 'v1' },
+                  { value: 'memberBlock', label: 'memberBlock', badge: 'v2' },
                   {
-                    value: "contractBlock",
-                    label: "contractBlock",
-                    badge: "v3"
+                    value: 'contractBlock',
+                    label: 'contractBlock',
+                    badge: 'v3'
                   }
                 ]}
               />

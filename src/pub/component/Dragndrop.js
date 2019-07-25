@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
-import BlockModModal from "../page/BlockModModal";
+import React, { Component } from 'react';
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
+import BlockModModal from '../page/BlockModModal';
 
 class Dragndrop extends Component {
   static defaultProps = {
     items: [
-      { id: "item-0", content: "item 0" },
-      { id: "item-1", content: "item 1" },
-      { id: "item-2", content: "item 2" },
-      { id: "item-3", content: "item 3" },
-      { id: "item-4", content: "item 4" }
+      { id: 'item-0', content: 'item 0' },
+      { id: 'item-1', content: 'item 1' },
+      { id: 'item-2', content: 'item 2' },
+      { id: 'item-3', content: 'item 3' },
+      { id: 'item-4', content: 'item 4' }
     ]
   };
 
@@ -20,7 +20,7 @@ class Dragndrop extends Component {
   }
 
   getDragState = isDragging => {
-    return isDragging ? "dragging" : "";
+    return isDragging ? 'dragging' : '';
   };
 
   // 배열 재정렬 함수
@@ -70,7 +70,7 @@ class Dragndrop extends Component {
                       {...provided.dragHandleProps}
                       {...provided.draggableProps}
                       className={
-                        "drag-items " + this.getDragState(snapshot.isDragging)
+                        'drag-items ' + this.getDragState(snapshot.isDragging)
                       }
                     >
                       <p>

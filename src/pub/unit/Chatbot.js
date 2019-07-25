@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Chatbot extends Component {
   render() {
@@ -27,12 +27,12 @@ class Chatbot extends Component {
             </div>
             <div className="user">
               <p>
-                <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                <span>{'${requestYm} 청구요금을 알려줘.'}</span>
               </p>
             </div>
             <div className="user result">
               <p>
-                <span>{"${requestYm} 청구요금을 알려줘."}</span>
+                <span>{'${requestYm} 청구요금을 알려줘.'}</span>
               </p>
             </div>
           </dd>

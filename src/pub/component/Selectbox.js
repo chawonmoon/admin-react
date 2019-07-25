@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Select from "react-select";
+import React, { Component } from 'react';
+import Select from 'react-select';
 
 class Selectbox extends Component {
   static defaultProps = {
-    selectopt: [{ value: 0, label: "선택 항목을 입력하세요." }]
+    selectopt: [{ value: 0, label: '선택 항목을 입력하세요.' }]
   };
 
   state = {

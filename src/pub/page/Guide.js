@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import React, { Component, Fragment } from 'react';
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
 class Guide extends Component {
   render() {
@@ -37,44 +37,44 @@ class Dragndrop extends Component {
   static defaultProps = {
     items: [
       {
-        id: "item-0",
-        content: "자가검침",
-        badge: [{ label: "사용중지", state: "danger" }]
+        id: 'item-0',
+        content: '자가검침',
+        badge: [{ label: '사용중지', state: 'danger' }]
       },
       {
-        id: "item-1",
-        content: "요금 산정 방법",
-        badge: [{ label: "사용중지", state: "primary" }]
+        id: 'item-1',
+        content: '요금 산정 방법',
+        badge: [{ label: '사용중지', state: 'primary' }]
       },
       {
-        id: "item-2",
-        content: "요금 할인",
-        badge: [{ label: "사용중지", state: "secondary" }]
+        id: 'item-2',
+        content: '요금 할인',
+        badge: [{ label: '사용중지', state: 'secondary' }]
       },
       {
-        id: "item-3",
-        content: "(세금) 계산서 발행",
-        badge: [{ label: "사용중지", state: "success" }]
+        id: 'item-3',
+        content: '(세금) 계산서 발행',
+        badge: [{ label: '사용중지', state: 'success' }]
       },
       {
-        id: "item-4",
-        content: "납부 방법",
+        id: 'item-4',
+        content: '납부 방법',
         badge: []
       },
       {
-        id: "item-5",
-        content: "체납 중지",
-        badge: [{ label: "사용중지", state: "danger" }]
+        id: 'item-5',
+        content: '체납 중지',
+        badge: [{ label: '사용중지', state: 'danger' }]
       },
       {
-        id: "item-6",
-        content: "채무 불이행 등록",
-        badge: [{ label: "사용중지", state: "primary" }]
+        id: 'item-6',
+        content: '채무 불이행 등록',
+        badge: [{ label: '사용중지', state: 'primary' }]
       },
       {
-        id: "item-7",
-        content: "보증 보험",
-        badge: [{ label: "사용중지", state: "secondary" }]
+        id: 'item-7',
+        content: '보증 보험',
+        badge: [{ label: '사용중지', state: 'secondary' }]
       }
     ]
   };
@@ -86,7 +86,7 @@ class Dragndrop extends Component {
   }
 
   getDragState = isDragging => {
-    return isDragging ? "dragging" : "";
+    return isDragging ? 'dragging' : '';
   };
 
   // 배열 재정렬 함수
@@ -136,7 +136,7 @@ class Dragndrop extends Component {
                       {...provided.dragHandleProps}
                       {...provided.draggableProps}
                       className={
-                        "drag-items " + this.getDragState(snapshot.isDragging)
+                        'drag-items ' + this.getDragState(snapshot.isDragging)
                       }
                     >
                       <p>
@@ -147,7 +147,7 @@ class Dragndrop extends Component {
                           {item.badge.map((state, index) => {
                             console.log(state.state);
                             return (
-                              <span className={"badge " + state.state}>
+                              <span className={'badge ' + state.state}>
                                 {state.label}
                               </span>
                             );

@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from "react";
-import Modal from "react-modal";
-import CKEditor from "ckeditor4-react";
+import React, { Component, Fragment } from 'react';
+import Modal from 'react-modal';
+import CKEditor from 'ckeditor4-react';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 class NoticeModal extends Component {
   state = {
@@ -54,7 +54,7 @@ class NoticeModal extends Component {
               <table className="table-defaults tables-hor table table-bordered">
                 <tbody>
                   <tr>
-                    <th scope="row" style={{ width: "15%" }}>
+                    <th scope="row" style={{ width: '15%' }}>
                       <span>제목</span>
                     </th>
                     <td>
@@ -78,7 +78,7 @@ class NoticeModal extends Component {
                       <CKEditor />
                     </td>
                   </tr>
-                  
+
                   <tr>
                     <th scope="row">
                       <span>최근공지 게시일시</span>

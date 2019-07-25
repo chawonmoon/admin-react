@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from "react";
-import Modal from "react-modal";
-import Dragndrop from "../component/Dragndrop";
+import React, { Component, Fragment } from 'react';
+import Modal from 'react-modal';
+import Dragndrop from '../component/Dragndrop';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 class BlockModal extends Component {
   state = {

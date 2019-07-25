@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
 class Schedule extends Component {
   render() {
@@ -75,19 +75,19 @@ class Schedule extends Component {
             <caption>세로형 테이블 샘플</caption>
             <thead>
               <tr>
-                <th scope="col" style={{ width: "7%" }}>
+                <th scope="col" style={{ width: '7%' }}>
                   <span>번호</span>
                 </th>
-                <th scope="col" style={{ width: "auto" }}>
+                <th scope="col" style={{ width: 'auto' }}>
                   <span>내용</span>
                 </th>
-                <th scope="col" style={{ width: "10%" }}>
+                <th scope="col" style={{ width: '10%' }}>
                   <span>상태</span>
                 </th>
-                <th scope="col" style={{ width: "25%" }}>
+                <th scope="col" style={{ width: '25%' }}>
                   <span>점검일시</span>
                 </th>
-                <th scope="col" style={{ width: "15%" }}>
+                <th scope="col" style={{ width: '15%' }}>
                   <span>등록일시</span>
                 </th>
               </tr>
@@ -119,7 +119,8 @@ class Schedule extends Component {
                 </th>
                 <td className="table-ellipsis">
                   <span>
-                    긴급 점검 중입니다. 긴급 점검 중입니다. 사용에 불편을 드려 대단히 죄송합니다.
+                    긴급 점검 중입니다. 긴급 점검 중입니다. 사용에 불편을 드려
+                    대단히 죄송합니다.
                   </span>
                 </td>
                 <td>

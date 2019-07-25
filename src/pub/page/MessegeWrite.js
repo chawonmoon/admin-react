@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import CKEditor from "ckeditor4-react";
+import React, { Component, Fragment } from 'react';
+import CKEditor from 'ckeditor4-react';
 
 class MessegeWrite extends Component {
   render() {
@@ -27,7 +27,7 @@ class MessegeWrite extends Component {
           <table className="table-defaults tables-hor table table-bordered">
             <tbody>
               <tr>
-                <th scope="row" style={{ width: "15%" }}>
+                <th scope="row" style={{ width: '15%' }}>
                   <span>랜덤 메시지명</span>
                 </th>
                 <td>
@@ -51,7 +51,7 @@ class MessegeWrite extends Component {
                   <CKEditor
                     config={{
                       toolbar: [], // 텍스트만 입력되기때문에 툴바를 삭제
-                      startupMode: "source", // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
+                      startupMode: 'source', // 텍스트만 입력되야하기 때문에 시작을 소스모드로 변경
                       resize_enabled: false // 사용자 리사이즈를 삭제
                     }}
                     data="기본 텍스트"

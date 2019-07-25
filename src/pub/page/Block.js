@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
 class Block extends Component {
   render() {
@@ -76,19 +76,19 @@ class Block extends Component {
             <caption>세로형 테이블 샘플</caption>
             <thead>
               <tr>
-                <th scope="col" style={{ width: "20%" }}>
+                <th scope="col" style={{ width: '20%' }}>
                   <span>블록명</span>
                 </th>
-                <th scope="col" style={{ width: "15%" }}>
+                <th scope="col" style={{ width: '15%' }}>
                   <span>실행함수</span>
                 </th>
-                <th scope="col" style={{ width: "15%" }}>
+                <th scope="col" style={{ width: '15%' }}>
                   <span>실행함수 변수</span>
                 </th>
-                <th scope="col" style={{ width: "15%" }}>
+                <th scope="col" style={{ width: '15%' }}>
                   <span>상태</span>
                 </th>
-                <th scope="col" style={{ width: "auto" }}>
+                <th scope="col" style={{ width: 'auto' }}>
                   <span>설명</span>
                 </th>
               </tr>

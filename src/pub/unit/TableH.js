@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Colorpicker, Fileupload } from "../component";
+import React, { Component } from 'react';
+import { Colorpicker, Fileupload } from '../component';
 
 class TableH extends Component {
   render() {
@@ -8,7 +8,7 @@ class TableH extends Component {
         <table className="table-defaults tables-hor table table-bordered">
           <tbody>
             <tr>
-              <th scope="row" style={{ width: "7%" }}>
+              <th scope="row" style={{ width: '7%' }}>
                 <span>등록일시</span>
               </th>
               <td>

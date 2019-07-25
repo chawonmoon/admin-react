@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from "react";
-import Modal from "react-modal";
+import React, { Component, Fragment } from 'react';
+import Modal from 'react-modal';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 class Modalconfirm extends Component {
   state = {

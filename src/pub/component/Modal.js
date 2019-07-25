@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from "react";
-import Modal from "react-modal";
-import { TableH } from "../unit";
+import React, { Component, Fragment } from 'react';
+import Modal from 'react-modal';
+import { TableH } from '../unit';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 class Modaldefault extends Component {
   state = {
@@ -57,7 +57,7 @@ class Modaldefault extends Component {
                 <i className="ico-checkmark" />
                 <span>확인</span>
               </button>
-                        <button className="btn btn-danger" onClick={this.closeModal}>
+              <button className="btn btn-danger" onClick={this.closeModal}>
                 <i className="ico-cross" />
                 <span>취소</span>
               </button>

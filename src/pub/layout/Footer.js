@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
 class Footer extends Component {
   render() {
@@ -7,7 +7,8 @@ class Footer extends Component {
         <div className="copyright">
           <strong>
             Copyright © 2019&nbsp;
-            <a href="https://chawonmoon.github.io/">chawonmoon.github.io</a>.&nbsp;
+            <a href="https://chawonmoon.github.io/">chawonmoon.github.io</a>
+            .&nbsp;
           </strong>
           <span>All rights reserved.</span>
         </div>
