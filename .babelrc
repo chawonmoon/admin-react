@@ -1,20 +1,18 @@
 {
-    "plugins": [
-        ["babel-plugin-styled-components"],
-        [
-            "@babel/plugin-proposal-decorators",
-            {
-                "legacy": true
-            }
-        ],
-        [
-            "@babel/plugin-proposal-class-properties",
-            {
-                "loose": true
-            }
-        ]
+  "plugins": [
+    ["styled-components"],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
     ],
-    "presets": [
-        "react-app"
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
     ]
+  ],
+  "presets": ["react-app"]
 }
