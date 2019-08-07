@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Modal from 'react-modal';
-import { TableH } from '../unit';
+import { TableH } from '../units';
 
 Modal.setAppElement('#root');
 

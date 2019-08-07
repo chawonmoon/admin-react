@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import LoginStyled from './Login.styled';
 
 class Login extends Component {
   render() {
     return (
-      <main className="login">
+      <LoginStyled className="login">
         <div className="login-inner">
           <h1>
             <img
@@ -49,14 +50,14 @@ class Login extends Component {
               </div>
             </div>
             <div>
-              <button href="#/" className="btn btn-info full">
+              <button className="btn btn-info full">
                 <i className="ico-user-check" />
                 <span>로그인</span>
               </button>
             </div>
           </section>
         </div>
-      </main>
+      </LoginStyled>
     );
   }
 }

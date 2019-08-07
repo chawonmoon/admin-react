@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 //import { HomeLogo } from "images";
+import HeaderStyled from './Header.styled';
 
 class Header extends Component {
   render() {
     return (
-      <header className="header" id="header">
+      <HeaderStyled id="header">
         <h1>
           <Link to="/">
             <img src="https://via.placeholder.com/225x62" alt="더미 로고" />
@@ -30,7 +31,7 @@ class Header extends Component {
             </button>
           </div>
         </div>
-      </header>
+      </HeaderStyled>
     );
   }
 }

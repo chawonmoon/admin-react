@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import SkipStyled from './Skip.styled';
 
 class Skip extends Component {
   render() {
     return (
-      <div id="skipnavi">
+      <SkipStyled>
         <ul>
           <li>
             <a href="#container">본문 바로가기</a>
@@ -15,7 +16,7 @@ class Skip extends Component {
             <a href="#footer">푸터 바로가기</a>
           </li>
         </ul>
-      </div>
+      </SkipStyled>
     );
   }
 }

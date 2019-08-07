@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import PushStyled from './Push.styled';
 
 class Push extends Component {
   render() {
     return (
-      <Fragment>
+      <PushStyled>
         {/* 브레드크럼 */}
         <div className="breadcrumbs-wrap">
           <ol className="breadcrumbs">
@@ -101,7 +102,7 @@ class Push extends Component {
             <li>사용계약번호, 핸드폰, 모바일ID 중 1개 필수 입력</li>
           </ul>
         </div>
-      </Fragment>
+      </PushStyled>
     );
   }
 }

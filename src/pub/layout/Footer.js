@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import FooterStyled from './Footer.styled';
 
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer">
+      <FooterStyled>
         <div className="copyright">
           <strong>
             Copyright © 2019&nbsp;
@@ -15,7 +16,7 @@ class Footer extends Component {
         <div className="version">
           <b>Version</b> 1.0.0
         </div>
-      </footer>
+      </FooterStyled>
     );
   }
 }

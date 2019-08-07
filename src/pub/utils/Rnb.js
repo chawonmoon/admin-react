@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import RnbStyled from './Rnb.styled';
 
 class Rnb extends Component {
   render() {
     return (
-      <aside className="rnb">
+      <RnbStyled className="rnb">
         <a className="handle" href="javascript:void(0);">
           <i className="ico-list" />
         </a>
@@ -178,7 +179,7 @@ class Rnb extends Component {
             </ul>
           </li>
         </ul>
-      </aside>
+      </RnbStyled>
     );
   }
 }

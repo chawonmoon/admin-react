@@ -6,7 +6,7 @@ import {
   TableH,
   Chatbot,
   Select
-} from '../unit';
+} from '../units';
 import {
   Selectbox,
   SelectboxMulti,

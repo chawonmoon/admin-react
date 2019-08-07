@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import CKEditor from 'ckeditor4-react';
+import MessegeRandomItemStyled from './MessegeRandomItem.styled';
 
 class MessegeRandomItem extends Component {
   render() {
     return (
-      <Fragment>
+      <MessegeRandomItemStyled>
         {/* 브레드크럼 */}
         <div className="breadcrumbs-wrap">
           <ol className="breadcrumbs">
@@ -253,7 +254,7 @@ class MessegeRandomItem extends Component {
             </button>
           </div>
         </div>
-      </Fragment>
+      </MessegeRandomItemStyled>
     );
   }
 }

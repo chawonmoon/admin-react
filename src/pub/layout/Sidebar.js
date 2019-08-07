@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import SidebarStyled from './Sidebar.styled';
 
 class Sidebar extends Component {
   render() {
     return (
-      <aside className="sidebar">
+      <SidebarStyled className="sidebar">
         <ul>
           <li className="active">
             <a href="javascript:void(0);">
@@ -99,7 +100,7 @@ class Sidebar extends Component {
             </a>
           </li>
         </ul>
-      </aside>
+      </SidebarStyled>
     );
   }
 }
